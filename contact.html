@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل مع شركة المتحدة | التوريدات الكهربائية ومهمات الأمان</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #f59e0b;
+      --secondary: #0f172a;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+      --text-muted: #64748b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Tajawal', sans-serif; background-color: var(--bg-light); color: var(--secondary); display: flex; flex-direction: column; min-height: 100vh; }
+
+    header { background: #fff; border-bottom: 1.5px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
+    .nav-container { max-width: 1240px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+
+    .logo-area { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+    .logo-box { width: 44px; height: 44px; background: linear-gradient(135deg, #0284c7, #0369a1); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .logo-box svg { width: 24px; height: 24px; fill: #fbbf24; }
+    .brand-title { font-size: 1.5rem; font-weight: 900; color: var(--secondary); }
+    .brand-title span { color: var(--accent); }
+
+    .nav-links { display: flex; align-items: center; gap: 18px; }
+    .nav-links a { text-decoration: none; color: var(--secondary); font-weight: 700; font-size: 0.95rem; }
+    .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+
+    .page-hero { background: radial-gradient(circle at top right, #1e3a8a 0%, #0f172a 100%); color: #fff; padding: 50px 20px; text-align: center; }
+    .page-hero h1 { font-size: 2.2rem; font-weight: 900; margin-bottom: 10px; }
+
+    .main-wrap { max-width: 1100px; margin: 40px auto 70px; padding: 0 20px; flex: 1; width: 100%; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+    .info-card { background: #fff; border-radius: 20px; border: 1.5px solid var(--border-color); padding: 35px; }
+    .info-card h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 20px; color: var(--secondary); }
+    .contact-line { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 20px; }
+    .contact-line .icon { font-size: 1.4rem; background: #e0f2fe; padding: 10px; border-radius: 12px; }
+    .contact-line div h4 { font-size: 1rem; font-weight: 800; margin-bottom: 4px; }
+    .contact-line div p { color: var(--text-muted); font-size: 0.95rem; }
+
+    .whatsapp-direct { display: flex; align-items: center; justify-content: center; gap: 10px; background: #22c55e; color: #fff; text-decoration: none; padding: 14px; border-radius: 12px; font-weight: 800; margin-top: 25px; transition: 0.2s; }
+    .whatsapp-direct:hover { background: #16a34a; }
+
+    .form-card { background: #fff; border-radius: 20px; border: 1.5px solid var(--border-color); padding: 35px; }
+    .form-card h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 20px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem; }
+    .form-group input, .form-group textarea { width: 100%; padding: 11px 14px; border: 1.5px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 0.95rem; outline: none; }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--primary); }
+    .send-btn { width: 100%; background: var(--primary); color: #fff; border: none; padding: 14px; border-radius: 10px; font-size: 1.05rem; font-weight: 800; cursor: pointer; font-family: inherit; }
+    .send-btn:hover { background: var(--primary-dark); }
+
+    footer { background: #0b1526; color: #94a3b8; text-align: center; padding: 30px 20px; font-size: 0.9rem; margin-top: auto; border-top: 1px solid #1e293b; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <div class="logo-box"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h8l-2 8 10-12h-8l2-8z"/></svg></div>
+        <div class="brand-title">المتحدة <span>⚡</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">عن الشركة</a>
+        <a href="contact.html" class="active">تواصل معنا</a>
+        <a href="cart.html">🛒 السلة</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>تواصل مع إدارة مبيعات المتحدة</h1>
+    <p>فريقنا جاهز لتجهيز المقايسات، عروض الأسعار، والرد على استفساراتكم</p>
+  </section>
+
+  <main class="main-wrap">
+    <div class="contact-grid">
+      <div class="info-card">
+        <h2>بيانات التواصل ومقر الشركة</h2>
+        
+        <div class="contact-line">
+          <div class="icon">📍</div>
+          <div>
+            <h4>المقر الرئيسي والمخازن</h4>
+            <p>القاهرة، مصر (خدمة التوريد متاحة لكافة المحافظات)</p>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <div class="icon">📞</div>
+          <div>
+            <h4>أرقام المبيعات والتوريد</h4>
+            <p>01000000000 / 01100000000</p>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <div class="icon">⏰</div>
+          <div>
+            <h4>مواعيد العمل الرسمية</h4>
+            <p>يومياً من الساعة 9:00 صباحاً حتى 9:00 مساءً (الجمعة إجازة)</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/201000000000?text=استفسار بخصوص توريدات كهربائية لشركة المتحدة" target="_blank" class="whatsapp-direct">
+          <span>💬 محادثة مباشرة عبر واتساب</span>
+        </a>
+      </div>
+
+      <div class="form-card">
+        <h2>أرسل رسالة أو طلب مقايسة</h2>
+        <form onsubmit="alert('تم إرسال رسالتك بنجاح، سيتواصل معك قسم المبيعات قريباً.'); this.reset(); return false;">
+          <div class="form-group">
+            <label>الاسم أو اسم المؤسسة:</label>
+            <input type="text" required placeholder="اكتب اسمك">
+          </div>
+          <div class="form-group">
+            <label>رقم التليفون:</label>
+            <input type="tel" required placeholder="01xxxxxxxxx">
+          </div>
+          <div class="form-group">
+            <label>تفاصيل الاستفسار أو الطلبية:</label>
+            <textarea rows="4" required placeholder="اكتب الأصناف أو استفسارك..."></textarea>
+          </div>
+          <button type="submit" class="send-btn">إرسال الرسالة الآن ⚡</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 <strong>شركة المتحدة للتوريدات الكهربائية ⚡</strong></p>
+  </footer>
+
+</body>
+</html>
