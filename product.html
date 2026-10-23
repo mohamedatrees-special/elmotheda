@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة المتحدة | تفاصيل المنتج</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #f59e0b;
+      --secondary: #0f172a;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+      --text-muted: #64748b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Tajawal', sans-serif; background-color: var(--bg-light); color: var(--secondary); display: flex; flex-direction: column; min-height: 100vh; }
+
+    header { background: #fff; border-bottom: 1.5px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
+    .nav-container { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+    
+    .logo-area { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+    .logo-box { width: 44px; height: 44px; background: linear-gradient(135deg, #0284c7, #0369a1); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .logo-box svg { width: 24px; height: 24px; fill: #fbbf24; }
+    .brand-title { font-size: 1.45rem; font-weight: 900; color: var(--secondary); }
+    .brand-title span { color: var(--accent); }
+
+    .nav-actions { display: flex; align-items: center; gap: 16px; }
+    .nav-actions a { text-decoration: none; font-weight: 700; font-size: 0.95rem; color: var(--secondary); }
+    .cart-btn { background: #f0f9ff; color: var(--primary) !important; padding: 8px 16px; border-radius: 20px; border: 1px solid #bae6fd; }
+
+    .main-wrap { max-width: 1150px; margin: 35px auto 60px; padding: 0 20px; flex: 1; width: 100%; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--primary); font-weight: 800; margin-bottom: 20px; }
+
+    .product-box { background: #fff; border-radius: 20px; border: 1.5px solid var(--border-color); padding: 40px; display: flex; flex-wrap: wrap; gap: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+    .img-side { flex: 1 1 400px; background: #fff; border-radius: 16px; display: flex; align-items: center; justify-content: center; padding: 25px; border: 1px solid #f1f5f9; }
+    .img-side img { max-width: 100%; max-height: 420px; object-fit: contain; }
+
+    .info-side { flex: 1 1 400px; display: flex; flex-direction: column; }
+    .cat-pill { align-self: flex-start; background: #e0f2fe; color: var(--primary); padding: 5px 14px; border-radius: 20px; font-weight: 800; font-size: 0.85rem; margin-bottom: 14px; }
+    .info-side h1 { font-size: 1.85rem; font-weight: 900; margin-bottom: 16px; line-height: 1.35; color: var(--secondary); }
+    .desc { font-size: 1.05rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 25px; }
+
+    .price-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 30px; }
+    .current-price { font-size: 2.3rem; font-weight: 900; color: #059669; }
+    .current-price span { font-size: 1.1rem; color: var(--text-muted); font-weight: 600; }
+    .old-price { font-size: 1.25rem; color: #94a3b8; text-decoration: line-through; }
+    .save-tag { background: #fee2e2; color: #dc2626; padding: 5px 12px; border-radius: 8px; font-weight: 800; font-size: 0.9rem; }
+
+    .actions-grid { display: flex; flex-direction: column; gap: 12px; }
+    .add-to-cart-btn { background: var(--primary); color: #fff; border: none; padding: 16px; border-radius: 12px; font-size: 1.15rem; font-weight: 800; cursor: pointer; transition: 0.2s; font-family: inherit; }
+    .add-to-cart-btn:hover { background: var(--primary-dark); }
+
+    .whatsapp-btn { background: #22c55e; color: #fff; text-decoration: none; text-align: center; padding: 14px; border-radius: 12px; font-size: 1.05rem; font-weight: 800; }
+
+    footer { background: #0b1526; color: #94a3b8; text-align: center; padding: 30px 20px; font-size: 0.9rem; border-top: 1px solid #1e293b; margin-top: auto; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <div class="logo-box"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h8l-2 8 10-12h-8l2-8z"/></svg></div>
+        <div class="brand-title">المتحدة <span>⚡</span></div>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">عن الشركة</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="cart.html" class="cart-btn">🛒 السلة (<span id="cartBadge">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-wrap">
+    <a href="index.html" class="back-link">→ العودة لجميع منتجات المتحدة</a>
+    <div id="productBox" class="product-box">جاري تحميل بيانات المنتج...</div>
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 <strong>شركة المتحدة للتوريدات الكهربائية ⚡</strong></p>
+  </footer>
+
+  <script>
+    const API_URL = "https://script.google.com/macros/s/AKfycbzzEbYH7pD08B-NRUza6sALW5b593HpMYSlTlDbasoQuh-q7mRcxDcS5AvUpnP7l9FY/exec";
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    function updateBadge() {
+      const cart = JSON.parse(localStorage.getItem('motaheda_cart') || '[]');
+      const total = cart.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById('cartBadge').innerText = total;
+    }
+
+    if (!productId) {
+      document.getElementById('productBox').innerHTML = "<p>لم يتم تحديد المنتج المطلوب.</p>";
+    } else {
+      fetch(API_URL)
+        .then(res => res.json())
+        .then(products => {
+          const item = products.find(p => String(p.id) === String(productId));
+          if (!item) {
+            document.getElementById('productBox').innerHTML = "<p>المنتج غير متوفر حالياً.</p>";
+            return;
+          }
+
+          const hasDiscount = item.old_price && Number(item.old_price) > Number(item.price);
+          let saveRate = hasDiscount ? Math.round(((item.old_price - item.price) / item.old_price) * 100) : 0;
+
+          document.getElementById('productBox').innerHTML = `
+            <div class="img-side">
+              <img src="${item.image}" alt="${item.title}">
+            </div>
+            <div class="info-side">
+              <span class="cat-pill">${item.category || 'عام'}</span>
+              <h1>${item.title}</h1>
+              <p class="desc">${item.description || 'صنف عالي الجودة معتمد من مخازن شركة المتحدة.'}</p>
+              
+              <div class="price-row">
+                <div class="current-price">${item.price} <span>ج.م</span></div>
+                ${hasDiscount ? `<div class="old-price">${item.old_price} ج.م</div>` : ''}
+                ${hasDiscount ? `<div class="save-tag">وفرت ${saveRate}%</div>` : ''}
+              </div>
+
+              <div class="actions-grid">
+                <button class="add-to-cart-btn" onclick='addToCart(${JSON.stringify(item)})'>
+                  🛒 إضافة إلى السلة والشراء
+                </button>
+                <a href="https://wa.me/201000000000?text=أريد طلب: ${encodeURIComponent(item.title)}" target="_blank" class="whatsapp-btn">
+                  💬 استفسار عبر واتساب المتحدة
+                </a>
+              </div>
+            </div>
+          `;
+        });
+    }
+
+    function addToCart(item) {
+      let cart = JSON.parse(localStorage.getItem('motaheda_cart') || '[]');
+      const existing = cart.find(i => String(i.id) === String(item.id));
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          id: item.id,
+          title: item.title,
+          price: item.price,
+          image: item.image,
+          qty: 1
+        });
+      }
+      localStorage.setItem('motaheda_cart', JSON.stringify(cart));
+      window.location.href = 'cart.html';
+    }
+
+    updateBadge();
+  </script>
+</body>
+</html>
